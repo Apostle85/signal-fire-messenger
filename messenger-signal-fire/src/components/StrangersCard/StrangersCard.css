@@ -1,0 +1,111 @@
+.movies-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  background: rgb(238, 192, 140);
+  box-shadow: 8px 8px 24px 16px rgb(0 0 0 / 16%);
+  border-radius: 16px;
+  text-align: left;
+  width: 80%;
+  overflow: hidden;
+}
+
+.movies-card__container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.movies-card__info {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 14px 14px;
+}
+
+.movies-card__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.movies-card__image {
+  width: 100%;
+  cursor: pointer;
+  height: 270px;
+  object-fit: cover;
+}
+
+.movies-card__title {
+  margin: 0 0 9px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.movies-card__duration {
+  margin: 0;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.18;
+  color: #707070;
+}
+
+.movies-card__save-button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 36px;
+  background: url("../../images/card__save-icon_active.svg") rgb(188, 142, 90) no-repeat center;
+  align-self: center;
+  margin: 0 14px 0 0;
+  background-size: 20px;
+  transition: all ease-in 0.2s;
+}
+
+.movies-card__save-button_state_saved {
+  background: url("../../images/card__save-icon_delete.svg") rgb(188, 142, 90)
+    no-repeat center;
+}
+
+.movies-card__save-button__state_disabled {
+  display: none;
+}
+
+.movies-card__save-button_state_active {
+  background: url("../../images/card__save-icon_active.svg") rgb(111, 22, 36)
+    no-repeat center;
+  background-size: 20px;
+}
+
+.movies-card__save-button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .movies-card {
+    max-width: 339px;
+  }
+
+  .movies-card__image {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .movies-card {
+    max-width: 300px;
+  }
+
+  .movies-card__image {
+    height: 168px;
+  }
+}

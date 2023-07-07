@@ -1,0 +1,129 @@
+.promo {
+  display: flex;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  justify-content: space-between;
+  padding: 75px 70px;
+  background-color: rgb(196,46,63);
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__title {
+  margin: 0 0 36px;
+  max-width: 640px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.16;
+  text-align: left;
+  color: rgb(238, 192, 140);
+}
+
+.promo__subtitle {
+  color: rgb(238, 192, 140);
+  margin: 0 0 146px;
+  max-width: 310px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.23;
+  text-align: left;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.promo__anchor {
+  align-self: start;
+  text-decoration: none;
+}
+
+.nav-button {
+  color: rgb(238, 192, 140);;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  margin: 0;
+  padding: 10px 20px;
+  max-width: max-content;
+  background: #dddee3;
+  border: 1px solid rgb(238, 192, 140);;
+  border-radius: 3px;
+  transition: opacity ease-in 0.2s;
+  background-color: rgb(196,46,63);
+}
+
+.nav-button:hover {
+  opacity: 0.8;
+}
+
+.promo__picture {
+  max-height: 304px;
+  max-width: 310px;
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    padding: 140px 0 0 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .promo__container {
+    align-items: center;
+  }
+
+  .promo__title {
+    margin: 48px 0 22px;
+    text-align: center;
+  }
+
+  .promo__subtitle {
+    margin: 0 0 92px;
+    text-align: center;
+  }
+
+  .promo__anchor {
+    align-self: center;
+    text-decoration: none;
+    margin: 0 0 76px;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .promo {
+    padding: 70px 0 14px 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .promo__container {
+    align-items: center;
+  }
+
+  .promo__title {
+    font-size: 30px;
+    line-height: 1.27;
+    margin: 44px 0 24px;
+    text-align: center;
+  }
+
+  .promo__subtitle {
+    max-width: 260px;
+    margin: 0 0 80px;
+    text-align: center;
+  }
+
+  .promo__anchor {
+    align-self: center;
+    text-decoration: none;
+    margin: 0 0 30px;
+  }
+
+  .promo__picture {
+    max-height: 210px;
+    max-width: 206px;
+  }
+}

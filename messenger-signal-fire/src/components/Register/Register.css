@@ -1,0 +1,150 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.register__container {
+  max-width: 396px;
+}
+
+.register__logo {
+  margin: 70px 0 40px;
+  width: 64px;
+  max-height: 64px;
+  transition: all ease-in 0.2s;
+}
+
+.register__logo:hover {
+  opacity: 0.8;
+}
+
+.register__logo-link {
+  margin: 0;
+  display: flex;
+  align-self: flex-start;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.register__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+  margin: 0;
+  text-align: left;
+  color: rgb(239,193,141);
+}
+
+.register__button {
+  cursor: pointer;
+  padding: 14px 0;
+  margin: 38px 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  border: none;
+  background-color: rgb(239,193,141);
+  border-radius: 3px;
+  color: rgb(111,22,36);
+  min-width: 396px;
+  transition: all ease-in 0.2s;
+}
+
+.register__button:hover {
+  opacity: 0.8;
+}
+
+.register__button_disabled {
+  color: rgb(199,153,101);
+  background: rgb(68,10,22);
+  opacity: 0.8;
+  cursor: default;
+}
+
+.register__link-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 32px;
+}
+
+.register__link-title {
+  margin: 0 6px 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: rgb(239,193,141);
+}
+
+.register__link {
+  text-decoration: none;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: rgb(68,10,22);
+  transition: opacity ease-in 0.2s;
+}
+
+.register__link:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .register__logo {
+    margin-bottom: 40px;
+  }
+
+  .register__button {
+    margin: 28px 0 0;
+    min-width: 396px;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .register__logo {
+    margin: 56px 0 50px;
+  }
+
+  .register__link-container {
+    margin: 14px 0 30px;
+  }
+
+  .register__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register__button {
+    margin: 36px 0 0;
+    min-width: 260px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .register__title {
+    font-size: 24px;
+    line-height: 1.21;
+    margin: 0 0 40px;
+  }
+
+  .register__logo-link {
+    align-self: auto;
+  }
+
+  .register__link-title {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .register__link {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}

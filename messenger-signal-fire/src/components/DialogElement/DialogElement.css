@@ -1,0 +1,42 @@
+.conversation {
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  padding: 6px;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: rgb(238, 192, 140);
+  box-shadow: 11px 3px 14px 6px rgb(0 0 0 / 16%);
+  border-radius: 11px;
+  transition: opacity ease-in 0.2s;
+  }
+
+  .conversation:first-child {
+    margin-top: 20px;
+  }
+  
+  .conversation:hover {
+    opacity: 0.8;
+  }
+  
+  .conversationImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .conversationName {
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .conversationName {
+      display: none;
+    }
+  }
+  
