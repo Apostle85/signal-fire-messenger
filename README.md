@@ -1,4 +1,4 @@
-# Fullstack Messenger App with encryption
+# Fullstack Messenger App with Encryption
 
 Hello, i'm Eli and this is my University Diploma project - 
 **Web-Messenger with End-to-End Encryption (E2EE)**
